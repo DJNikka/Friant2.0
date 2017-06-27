@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63F7D5651EF9C08100BECF0B"
-               BuildableName = "Friant.app"
+               BuildableName = "Friant App.app"
                BlueprintName = "Friant"
                ReferencedContainer = "container:Friant.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63F7D5651EF9C08100BECF0B"
-            BuildableName = "Friant.app"
+            BuildableName = "Friant App.app"
             BlueprintName = "Friant"
             ReferencedContainer = "container:Friant.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63F7D5651EF9C08100BECF0B"
-            BuildableName = "Friant.app"
+            BuildableName = "Friant App.app"
             BlueprintName = "Friant"
             ReferencedContainer = "container:Friant.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63F7D5651EF9C08100BECF0B"
-            BuildableName = "Friant.app"
+            BuildableName = "Friant App.app"
             BlueprintName = "Friant"
             ReferencedContainer = "container:Friant.xcodeproj">
          </BuildableReference>
