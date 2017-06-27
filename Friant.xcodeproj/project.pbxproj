@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635DF75F1F026AC000117A1F /* DescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635DF75E1F026AC000117A1F /* DescriptionVC.swift */; };
 		63EF24511F0122FC00BA28CA /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF24501F0122FC00BA28CA /* AboutVC.swift */; };
 		63F7D56A1EF9C08100BECF0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D5691EF9C08100BECF0B /* AppDelegate.swift */; };
 		63F7D56C1EF9C08100BECF0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D56B1EF9C08100BECF0B /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		635DF75E1F026AC000117A1F /* DescriptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
 		63EF24501F0122FC00BA28CA /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		63F7D5661EF9C08100BECF0B /* Friant App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friant App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F7D5691EF9C08100BECF0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				63F7D56B1EF9C08100BECF0B /* ViewController.swift */,
 				63F7D5901EFB6D3800BECF0B /* FriantDetailVC.swift */,
 				63EF24501F0122FC00BA28CA /* AboutVC.swift */,
+				635DF75E1F026AC000117A1F /* DescriptionVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				63EF24511F0122FC00BA28CA /* AboutVC.swift in Sources */,
 				63F7D56C1EF9C08100BECF0B /* ViewController.swift in Sources */,
 				63F7D5911EFB6D3800BECF0B /* FriantDetailVC.swift in Sources */,
+				635DF75F1F026AC000117A1F /* DescriptionVC.swift in Sources */,
 				63F7D57F1EF9C83E00BECF0B /* FriantCell.swift in Sources */,
 				63F7D56A1EF9C08100BECF0B /* AppDelegate.swift in Sources */,
 				63F7D5821EF9D32900BECF0B /* Friant.swift in Sources */,

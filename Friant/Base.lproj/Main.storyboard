@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -277,16 +278,20 @@ fax: (510) 535-5237</string>
                                     <constraint firstItem="Yd9-4z-Gwz" firstAttribute="leading" secondItem="stu-ma-1E6" secondAttribute="leading" constant="20" id="sGo-n8-Tdy"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoT-ve-LaH">
-                                <rect key="frame" x="64" y="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jk-Rv-gVN">
+                                <rect key="frame" x="46" y="617" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Aye-wF-7ne" kind="show" animates="NO" id="TYh-y2-HVG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1Jk-Rv-gVN" firstAttribute="leading" secondItem="CYb-JV-6zc" secondAttribute="leadingMargin" constant="30" id="BWz-lI-jgF"/>
                             <constraint firstItem="stu-ma-1E6" firstAttribute="top" secondItem="CYb-JV-6zc" secondAttribute="top" id="ULx-bq-olf"/>
                             <constraint firstAttribute="trailing" secondItem="stu-ma-1E6" secondAttribute="trailing" id="ZON-tq-S1I"/>
+                            <constraint firstItem="Brm-RI-rOS" firstAttribute="top" secondItem="1Jk-Rv-gVN" secondAttribute="bottom" constant="20" id="c1u-xf-pQU"/>
                             <constraint firstItem="stu-ma-1E6" firstAttribute="leading" secondItem="CYb-JV-6zc" secondAttribute="leading" id="pY2-Le-H7F"/>
                         </constraints>
                     </view>
@@ -296,7 +301,61 @@ fax: (510) 535-5237</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enl-qU-skF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="133"/>
+            <point key="canvasLocation" x="1014" y="146"/>
+        </scene>
+        <!--DescriptionVC-->
+        <scene sceneID="7rB-fQ-esb">
+            <objects>
+                <viewController id="Aye-wF-7ne" customClass="DescriptionVC" customModule="Friant_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Vt-sN-I11"/>
+                        <viewControllerLayoutGuide type="bottom" id="cX4-vP-jDo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cVV-rq-xsK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XnO-lN-e1a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9m-ic-hLE">
+                                        <rect key="frame" x="120" y="25.5" width="135.5" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="41"/>
+                                        <color key="textColor" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603815790000004" alpha="0.97570633559999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81613248589999998" green="0.1413515508" blue="0.16583052279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="E0q-7b-Qbi"/>
+                                    <constraint firstItem="F9m-ic-hLE" firstAttribute="centerY" secondItem="XnO-lN-e1a" secondAttribute="centerY" id="gD0-eo-B8n"/>
+                                    <constraint firstItem="F9m-ic-hLE" firstAttribute="centerX" secondItem="XnO-lN-e1a" secondAttribute="centerX" id="wCm-ZL-AxA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dg-MA-FFq">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="Aye-wF-7ne" eventType="touchUpInside" id="n7U-rI-e4B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5dg-MA-FFq" firstAttribute="centerX" secondItem="cVV-rq-xsK" secondAttribute="centerX" id="9Hw-R8-oND"/>
+                            <constraint firstItem="XnO-lN-e1a" firstAttribute="top" secondItem="cVV-rq-xsK" secondAttribute="top" id="RZe-2H-Xhn"/>
+                            <constraint firstItem="XnO-lN-e1a" firstAttribute="leading" secondItem="cVV-rq-xsK" secondAttribute="leading" id="Txe-ee-5x3"/>
+                            <constraint firstAttribute="trailing" secondItem="XnO-lN-e1a" secondAttribute="trailing" id="U5O-Qd-GJl"/>
+                            <constraint firstItem="5dg-MA-FFq" firstAttribute="centerY" secondItem="cVV-rq-xsK" secondAttribute="centerY" id="sOS-nv-TSa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl2" destination="F9m-ic-hLE" id="Am7-af-l3t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIK-sp-rlM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="144.3778110944528"/>
         </scene>
     </scenes>
     <resources>
