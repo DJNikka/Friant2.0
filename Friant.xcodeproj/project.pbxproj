@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63EF24511F0122FC00BA28CA /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF24501F0122FC00BA28CA /* AboutVC.swift */; };
+		63F7D56A1EF9C08100BECF0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D5691EF9C08100BECF0B /* AppDelegate.swift */; };
+		63F7D56C1EF9C08100BECF0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D56B1EF9C08100BECF0B /* ViewController.swift */; };
+		63F7D56F1EF9C08100BECF0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F7D56D1EF9C08100BECF0B /* Main.storyboard */; };
+		63F7D5711EF9C08100BECF0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F7D5701EF9C08100BECF0B /* Assets.xcassets */; };
+		63F7D5741EF9C08100BECF0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F7D5721EF9C08100BECF0B /* LaunchScreen.storyboard */; };
+		63F7D57F1EF9C83E00BECF0B /* FriantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D57E1EF9C83E00BECF0B /* FriantCell.swift */; };
+		63F7D5821EF9D32900BECF0B /* Friant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D5811EF9D32900BECF0B /* Friant.swift */; };
+		63F7D58A1EFB4CC800BECF0B /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D5891EFB4CC800BECF0B /* csv.swift */; };
+		63F7D58C1EFB557000BECF0B /* friant.csv in Resources */ = {isa = PBXBuildFile; fileRef = 63F7D58B1EFB557000BECF0B /* friant.csv */; };
+		63F7D5911EFB6D3800BECF0B /* FriantDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D5901EFB6D3800BECF0B /* FriantDetailVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63EF24501F0122FC00BA28CA /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		63F7D5661EF9C08100BECF0B /* Friant App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friant App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F7D5691EF9C08100BECF0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63F7D56B1EF9C08100BECF0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63F7D56E1EF9C08100BECF0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63F7D5701EF9C08100BECF0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63F7D5731EF9C08100BECF0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63F7D5751EF9C08100BECF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F7D57E1EF9C83E00BECF0B /* FriantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriantCell.swift; sourceTree = "<group>"; };
+		63F7D5811EF9D32900BECF0B /* Friant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friant.swift; sourceTree = "<group>"; };
+		63F7D5891EFB4CC800BECF0B /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		63F7D58B1EFB557000BECF0B /* friant.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = friant.csv; sourceTree = "<group>"; };
+		63F7D5901EFB6D3800BECF0B /* FriantDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriantDetailVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63F7D5631EF9C08100BECF0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63F7D55D1EF9C08000BECF0B = {
+			isa = PBXGroup;
+			children = (
+				63F7D5681EF9C08100BECF0B /* Friant */,
+				63F7D5671EF9C08100BECF0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63F7D5671EF9C08100BECF0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D5661EF9C08100BECF0B /* Friant App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63F7D5681EF9C08100BECF0B /* Friant */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D5801EF9D31E00BECF0B /* Model */,
+				63F7D57B1EF9C7FE00BECF0B /* View */,
+				63F7D58D1EFB697600BECF0B /* Controller */,
+				63F7D58E1EFB69A000BECF0B /* Resources */,
+				63F7D58F1EFB69C600BECF0B /* Utilities */,
+				63F7D5691EF9C08100BECF0B /* AppDelegate.swift */,
+				63F7D56D1EF9C08100BECF0B /* Main.storyboard */,
+				63F7D5721EF9C08100BECF0B /* LaunchScreen.storyboard */,
+				63F7D5751EF9C08100BECF0B /* Info.plist */,
+			);
+			path = Friant;
+			sourceTree = "<group>";
+		};
+		63F7D57B1EF9C7FE00BECF0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D57E1EF9C83E00BECF0B /* FriantCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63F7D5801EF9D31E00BECF0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D5811EF9D32900BECF0B /* Friant.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63F7D58D1EFB697600BECF0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D56B1EF9C08100BECF0B /* ViewController.swift */,
+				63F7D5901EFB6D3800BECF0B /* FriantDetailVC.swift */,
+				63EF24501F0122FC00BA28CA /* AboutVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		63F7D58E1EFB69A000BECF0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D5701EF9C08100BECF0B /* Assets.xcassets */,
+				63F7D58B1EFB557000BECF0B /* friant.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		63F7D58F1EFB69C600BECF0B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				63F7D5891EFB4CC800BECF0B /* csv.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63F7D5651EF9C08100BECF0B /* Friant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F7D5781EF9C08100BECF0B /* Build configuration list for PBXNativeTarget "Friant" */;
+			buildPhases = (
+				63F7D5621EF9C08100BECF0B /* Sources */,
+				63F7D5631EF9C08100BECF0B /* Frameworks */,
+				63F7D5641EF9C08100BECF0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Friant;
+			productName = Friant;
+			productReference = 63F7D5661EF9C08100BECF0B /* Friant App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63F7D55E1EF9C08000BECF0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Konstantine Piterman";
+				TargetAttributes = {
+					63F7D5651EF9C08100BECF0B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = D8ZBA7RCZR;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 63F7D5611EF9C08000BECF0B /* Build configuration list for PBXProject "Friant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63F7D55D1EF9C08000BECF0B;
+			productRefGroup = 63F7D5671EF9C08100BECF0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63F7D5651EF9C08100BECF0B /* Friant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63F7D5641EF9C08100BECF0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F7D58C1EFB557000BECF0B /* friant.csv in Resources */,
+				63F7D5741EF9C08100BECF0B /* LaunchScreen.storyboard in Resources */,
+				63F7D5711EF9C08100BECF0B /* Assets.xcassets in Resources */,
+				63F7D56F1EF9C08100BECF0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63F7D5621EF9C08100BECF0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63EF24511F0122FC00BA28CA /* AboutVC.swift in Sources */,
+				63F7D56C1EF9C08100BECF0B /* ViewController.swift in Sources */,
+				63F7D5911EFB6D3800BECF0B /* FriantDetailVC.swift in Sources */,
+				63F7D57F1EF9C83E00BECF0B /* FriantCell.swift in Sources */,
+				63F7D56A1EF9C08100BECF0B /* AppDelegate.swift in Sources */,
+				63F7D5821EF9D32900BECF0B /* Friant.swift in Sources */,
+				63F7D58A1EFB4CC800BECF0B /* csv.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63F7D56D1EF9C08100BECF0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F7D56E1EF9C08100BECF0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63F7D5721EF9C08100BECF0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F7D5731EF9C08100BECF0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63F7D5761EF9C08100BECF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63F7D5771EF9C08100BECF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63F7D5791EF9C08100BECF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D8ZBA7RCZR;
+				INFOPLIST_FILE = Friant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Everipedia.Friant;
+				PRODUCT_NAME = "Friant App";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		63F7D57A1EF9C08100BECF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D8ZBA7RCZR;
+				INFOPLIST_FILE = Friant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Everipedia.Friant;
+				PRODUCT_NAME = "Friant App";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63F7D5611EF9C08000BECF0B /* Build configuration list for PBXProject "Friant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F7D5761EF9C08100BECF0B /* Debug */,
+				63F7D5771EF9C08100BECF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F7D5781EF9C08100BECF0B /* Build configuration list for PBXNativeTarget "Friant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F7D5791EF9C08100BECF0B /* Debug */,
+				63F7D57A1EF9C08100BECF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63F7D55E1EF9C08000BECF0B /* Project object */;
+}
