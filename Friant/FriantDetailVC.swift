@@ -15,38 +15,57 @@ class FriantDetailVC: UIViewController {
 
     @IBOutlet weak var nameLbl: UILabel!
 
+
+    @IBOutlet weak var firstContainer: UIView!
+    
+    @IBOutlet weak var secondContainer: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
   
+        
 
         nameLbl.text = friant.name
         
         //nameLbl.text = "\(friant.name)" is more explicit but unnecessary
         
     }
-   
 
-    @IBAction func goPressed(_ sender: UIButton) {
-        
-        performSegue(withIdentifier: "go", sender: self)
-        
-        
-        
-    }
+    @IBAction func goPressed(_ sender: UISegmentedControl) {
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destVC = segue.destination as! DescriptionVC
+   
         
-        destVC.nameToDisplay = nameLbl.text!
+        switch sender.selectedSegmentIndex {
+        case 0:
+           
+            firstContainer.isHidden = false
+            secondContainer.isHidden = true
+        case 1:
+            firstContainer.isHidden = true
+            secondContainer.isHidden = false
+        
+        default:
+            break;
+        }
+      
+   
+//        performSegue(withIdentifier: "go", sender: self)
+        
+        
+//    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let destVC = segue.destination as! DescriptionVC
+//        
+//        destVC.nameToDisplay = nameLbl.text!
+    
+//    passing data from one view controller to another
     }
     
     
 
     @IBAction func backBtnPressed(_ sender: Any) {
-    
-    
     
      dismiss(animated: true, completion: nil)
 
