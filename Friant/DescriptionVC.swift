@@ -11,18 +11,22 @@ import UIKit
 class DescriptionVC: UIViewController {
 
     
-    @IBOutlet weak var nameLbl2: UILabel!
+
    
     
-    var friant: Friant!
+    @IBOutlet weak var nameLbl: UILabel!
+   
+    var nameToDisplay = ""
+    
+//    var friant: Friant!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        nameLbl2.text = "friant.name"
+        nameLbl.text = nameToDisplay
         
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func backBtnPressed(_ sender: Any) {

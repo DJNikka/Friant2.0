@@ -26,6 +26,23 @@ class FriantDetailVC: UIViewController {
         //nameLbl.text = "\(friant.name)" is more explicit but unnecessary
         
     }
+   
+
+    @IBAction func goPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "go", sender: self)
+        
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! DescriptionVC
+        
+        destVC.nameToDisplay = nameLbl.text!
+    }
+    
+    
 
     @IBAction func backBtnPressed(_ sender: Any) {
     
