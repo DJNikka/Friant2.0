@@ -20,6 +20,7 @@ class FriantCell: UICollectionViewCell {
         
         nameLbl.text = self.friant.name.uppercased()
         thumbImg.image = UIImage(named: "\(self.friant.furnitureId)")
+//        descriptionLbl.text = self.friant.descriptionId.uppercased()
         
         //adding letters in order to sort by typing UIImage(named: "A\(self.friant.furintureId)")
         //adding letters in order to sort by typing UIImage(named: "B\(self.friant.furintureId)")

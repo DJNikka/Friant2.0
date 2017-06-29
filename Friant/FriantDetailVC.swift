@@ -19,7 +19,7 @@ class FriantDetailVC: UIViewController {
     @IBOutlet weak var firstContainer: UIView!
     
     @IBOutlet weak var secondContainer: UIView!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,6 @@ class FriantDetailVC: UIViewController {
         
 
         nameLbl.text = friant.name
-        
         //nameLbl.text = "\(friant.name)" is more explicit but unnecessary
         
     }

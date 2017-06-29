@@ -195,7 +195,7 @@
                                 <rect key="frame" x="102" y="556" width="210.33333333333331" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headquarters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj1-zY-0vY">
-                                        <rect key="frame" x="41.666666666666657" y="0.0" width="126.66666666666666" height="28.666666666666629"/>
+                                        <rect key="frame" x="42" y="0.0" width="126.66666666666669" height="28.666666666666629"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="UFA-Mb-MdJ"/>
                                         </constraints>
@@ -368,10 +368,10 @@ fax: (510) 535-5237</string>
             </objects>
             <point key="canvasLocation" x="1727" y="36"/>
         </scene>
-        <!--View Controller-->
+        <!--DescriptionVC-->
         <scene sceneID="NlV-Gw-yOb">
             <objects>
-                <viewController id="6V4-96-QNu" sceneMemberID="viewController">
+                <viewController id="6V4-96-QNu" customClass="DescriptionVC" customModule="Friant_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sem-wS-IrL"/>
                         <viewControllerLayoutGuide type="bottom" id="fR5-w6-Hlb"/>
@@ -380,27 +380,64 @@ fax: (510) 535-5237</string>
                         <rect key="frame" x="0.0" y="0.0" width="394" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4K-E8-G0J">
-                                <rect key="frame" x="0.0" y="0.0" width="394" height="578"/>
-                                <string key="text">This is the best piece of furniture you will ever buy. It is even at the best price that anyone could imagine! Plus, you will never be tired of how it looks inside of your office.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qcd-Ww-V8c">
+                                <rect key="frame" x="20" y="50.666666666666657" width="354" height="477"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="dYH-oS-rVj"/>
+                                    <constraint firstAttribute="height" constant="477" id="fAU-sk-d1A"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iLT-HO-F68">
+                                    <size key="itemSize" width="346.33333333333331" height="468"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FriantDCell" id="8WV-og-nLq" customClass="FriantDCell" customModule="Friant_App" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="0.0" width="346.33333333333331" height="468"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="346" height="468"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEu-Sx-c3U">
+                                                    <rect key="frame" x="23" y="84.333333333333314" width="300" height="300"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="KsJ-ZB-OQZ"/>
+                                                        <constraint firstAttribute="height" constant="300" id="OY2-8h-RmF"/>
+                                                    </constraints>
+                                                    <string key="text">This is the best piece of furniture you will ever buy. It is even at the best price that anyone could imagine! Plus, you will never be tired of how it looks inside of your office.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="XEu-Sx-c3U" firstAttribute="centerY" secondItem="8WV-og-nLq" secondAttribute="centerY" id="Uq2-bT-mA5"/>
+                                            <constraint firstItem="XEu-Sx-c3U" firstAttribute="centerX" secondItem="8WV-og-nLq" secondAttribute="centerX" id="wHB-wA-dg0"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="XEu-Sx-c3U" id="hLl-0t-Kcd"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="d4K-E8-G0J" firstAttribute="centerX" secondItem="Esv-cF-YeZ" secondAttribute="centerX" id="8EE-R9-FlS"/>
-                            <constraint firstAttribute="trailing" secondItem="d4K-E8-G0J" secondAttribute="trailing" id="TTc-fC-Ymg"/>
-                            <constraint firstItem="d4K-E8-G0J" firstAttribute="leading" secondItem="Esv-cF-YeZ" secondAttribute="leading" id="Zlf-Pd-9N4"/>
-                            <constraint firstAttribute="bottom" secondItem="d4K-E8-G0J" secondAttribute="bottom" id="eEl-nf-CtJ"/>
-                            <constraint firstItem="d4K-E8-G0J" firstAttribute="top" secondItem="Esv-cF-YeZ" secondAttribute="top" id="f4N-ND-fey"/>
+                            <constraint firstItem="Qcd-Ww-V8c" firstAttribute="centerX" secondItem="Esv-cF-YeZ" secondAttribute="centerX" id="hum-Jg-zdx"/>
+                            <constraint firstItem="Qcd-Ww-V8c" firstAttribute="centerY" secondItem="Esv-cF-YeZ" secondAttribute="centerY" id="qaH-gY-ZUo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="Qcd-Ww-V8c" id="S1Z-DN-QtU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYD-SK-Lx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725.5999999999999" y="561.76911544227892"/>
+            <point key="canvasLocation" x="1724.6376811594205" y="561.68478260869574"/>
         </scene>
     </scenes>
     <resources>
