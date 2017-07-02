@@ -13,7 +13,11 @@ class Friant {
     
     private var _name: String!
     private var _furnitureId: Int!
-
+    private var _description: String!
+    
+    var description: String {
+        return _description
+    }
     
     
     var name: String {
@@ -25,10 +29,12 @@ class Friant {
         
     }
     
-    init(name: String, furnitureId: Int) {
+    init(name: String, furnitureId: Int, description: String) {
         
         self._name = name
         self._furnitureId = furnitureId
+        self._description = description
+    
     }
     
 }

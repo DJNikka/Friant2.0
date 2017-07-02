@@ -43,9 +43,9 @@ class DescriptionVC: UIViewController, UICollectionViewDelegate, UICollectionVie
             for row in rows {
                 
                 let furnId = Int(row["id"]!)!
-                let name = row["description"]!
+                let symbol = row["symbol"]!
                 
-                let furn = FriantD(name: name, furnitureId: furnId)
+                let furn = FriantD(symbol: symbol, furnitureId: furnId)
                 friantD.append(furn)
                 
             }

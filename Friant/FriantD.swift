@@ -11,21 +11,21 @@ import Foundation
 
 class FriantD {
 
-    private var _name: String!
+    private var _symbol: String!
     private var _furnitureId: Int!
 
-    var name: String {
+    var symbol: String {
         
-        return _name
+        return _symbol
     }
     var furnitureId: Int {
         return _furnitureId
         
     }
     
-    init(name: String, furnitureId: Int) {
+    init(symbol: String, furnitureId: Int) {
         
-        self._name = name
+        self._symbol = symbol
         self._furnitureId = furnitureId
     }
     

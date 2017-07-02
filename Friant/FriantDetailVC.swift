@@ -15,8 +15,7 @@ class FriantDetailVC: UIViewController {
 
     @IBOutlet weak var nameLbl: UILabel!
 
-
-    @IBOutlet weak var firstContainer: UIView!
+    @IBOutlet weak var descLbl: UITextView!
     
     @IBOutlet weak var secondContainer: UIView!
 
@@ -27,6 +26,8 @@ class FriantDetailVC: UIViewController {
         
 
         nameLbl.text = friant.name
+        descLbl.text = friant.description
+        
         //nameLbl.text = "\(friant.name)" is more explicit but unnecessary
         
     }
@@ -37,12 +38,10 @@ class FriantDetailVC: UIViewController {
         
         switch sender.selectedSegmentIndex {
         case 0:
-           
-            firstContainer.isHidden = false
-            secondContainer.isHidden = true
-        case 1:
-            firstContainer.isHidden = true
+        
             secondContainer.isHidden = false
+        case 1:
+            secondContainer.isHidden = true
         
         default:
             break;

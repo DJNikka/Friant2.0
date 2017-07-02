@@ -43,8 +43,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 
                 let furnId = Int(row["id"]!)!
                 let name = row["identifier"]!
+                let description = row["description"]!
                 
-                let furn = Friant(name: name, furnitureId: furnId)
+                let furn = Friant(name: name, furnitureId: furnId, description: description)
             friant.append(furn)
                 
             }
@@ -92,6 +93,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         furn = friant[indexPath.row]
 
+      
     
         performSegue(withIdentifier: "FriantDetailVC", sender: furn)
         

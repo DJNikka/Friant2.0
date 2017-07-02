@@ -19,7 +19,7 @@ class FriantDCell: UICollectionViewCell {
         
         self.friantD = friantD
         
-        nameLbl.text = self.friantD.name.capitalized
+        nameLbl.text = self.friantD.symbol.capitalized
     }
     
 }
