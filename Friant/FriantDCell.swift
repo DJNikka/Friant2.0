@@ -12,6 +12,9 @@ class FriantDCell: UICollectionViewCell {
 
     @IBOutlet weak var nameLbl: UILabel!
     
+    @IBOutlet weak var thumbImg: UIImageView!
+    
+    
     var friantD: FriantD!
     
     
@@ -20,6 +23,10 @@ class FriantDCell: UICollectionViewCell {
         self.friantD = friantD
         
         nameLbl.text = self.friantD.symbol.capitalized
+        
+        thumbImg.image = UIImage(named: "\(self.friantD.furnitureId)")
+        
+        //materialize
     }
     
 }

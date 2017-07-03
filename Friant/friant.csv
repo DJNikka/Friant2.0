@@ -1,13 +1,13 @@
-id,identifier,symbol,description
-1,My-Hite,MH,The applied science of equipment design"," for the workplace intended to maximize productivity by reducing operator fatigue and discomfort.The modern office is here: ergonomic at the touch of a button, wired, power and data driven with clean, efficient furniture that allows you to adapt quickly and easily.Friant’s My-Hite tables were designed to promote the type of very adaptable workspace, that reduces discomfort, by allowing the users the ability to sit, stand or adjust their workstations with total flexibility, up to three pre-sets on the worksurface.Add in our new Beam, which allows you to control all the data and power that the modern office needs with a minimum of mess and wires, and you have the perfect open or closed office solution Friant’s My-Hite Adjustable tables, beam and colorful new mobile pedestal integrate perfectly with any of the Friant Open Plan solutions, as well as private office furniture."
-2,Interra,I, good
-3,Dash,D, nice
-4,Novo,N, funny
-5,System-2,SY, definite
-6,Tiles,T, ridiculous
-7,Verity,V, a
-8,Gitana,G, 2
-9,Mesa,M, 3
-10,Willow,W, 4
-11,Standards,ST, 5
-12,Seating,SE, 6
+id|identifier|symbol|description
+1|My-Hite|MH|The applied science of equipment design, for the workplace, intended to maximize productivity by reducing operator fatigue and discomfort. The modern office is here: ergonomic at the touch of a button, wired, power and data driven with clean, efficient furniture that allows you to adapt quickly and easily. Friant’s My-Hite tables were designed to promote the type of very adaptable workspace, that reduces discomfort, by allowing the users the ability to sit, stand or adjust their workstations with total flexibility, up to three pre-sets on the worksurface. Add in our new Beam, which allows you to control all the data and power that the modern office needs with a minimum of mess and wires, and you have the perfect open or closed office solution Friant’s My-Hite Adjustable tables, beam and colorful new mobile pedestal integrate perfectly with any of the Friant Open Plan solutions, as well as private office furniture.
+2|Interra|I|good
+3|Dash|D|nice
+4|Novo|N|funny
+5|System-2|SY|definite
+6|Tiles|T|ridiculous
+7|Verity|V|a
+8|Gitana|G|2
+9|Mesa|M|3
+10|Willow|W|4
+11|Standards|ST|5
+12|Seating|SE|6

@@ -40,9 +40,10 @@ class FriantDetailVC: UIViewController {
         case 0:
         
             secondContainer.isHidden = false
+            descLbl.isHidden = true
         case 1:
             secondContainer.isHidden = true
-        
+            descLbl.isHidden = false
         default:
             break;
         }
