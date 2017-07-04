@@ -26,7 +26,7 @@ class FriantDCell: UICollectionViewCell {
         
         thumbImg.image = UIImage(named: "\(self.friantD.furnitureId)")
         
-        //materialize
+      
     }
     
 }
