@@ -24,7 +24,7 @@ class FriantDCell: UICollectionViewCell {
         
         nameLbl.text = self.friantD.symbol.capitalized
         
-        thumbImg.image = UIImage(named: "\(self.friantD.furnitureId)")
+        thumbImg.image = UIImage(named: "\(self.friantD.symbol)"+String(self.friantD.furnitureId))
         
       
     }
